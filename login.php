@@ -10,13 +10,16 @@
 
 	if ($count == 1) {
 		while($yenisonuc=mysqli_fetch_row($result) ){
-			$deviceId = $yenisonuc[6];
+			$userId = $yenisonuc[0];
+			echo $userId;
 		}
+		/*
 		$sql2 = "SELECT * FROM Device Where DeviceId = '".$deviceId."'";
 		$result2 = mysqli_query($db,$sql2);
 		while($yenisonuc2 = mysqli_fetch_row($result2)) {
 			echo $yenisonuc2[1];
 		}
+		*/
 	}else{
 		echo json_encode("Error");
 	}

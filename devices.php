@@ -13,6 +13,7 @@ $con = mysqli_connect('localhost','root','root','Otkosis_Db');
  // Populate ID from JSON $obj array and store into $ID variable.
  //Fetching the selected record as per ID.
  $CheckSQL = "SELECT DeviceId, DeviceIMEI, DeviceName, DeviceLocation FROM Device WHERE UserId = '".$userid."'";
+ //$CheckSQL = "SELECT DeviceId, DeviceIMEI, DeviceName, DeviceLocation FROM Device";
  
  $result = $con->query($CheckSQL);
  
